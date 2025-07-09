@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.arcade-container {
+    display: flex;
+    height: 100vh;
+    background: url('/image/arcade-bg.gif') center center no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Press Start 2P', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.login-left-pane {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-left: 60px;
+    margin-top: -400px;
+    text-align: center;
+}
+
+.login-left-pane h3 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+.arcade-register-button {
+    padding: 14px 26px;
+    background: linear-gradient(to bottom, #ff00ff, #ff6600);
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #ffcc00;
+    border-radius: 12px;
+    font-size: 12px;
+    box-shadow: 0 0 12px #ff00ff;
+    transition: transform 0.2s ease;
+}
+
+.arcade-register-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, #ff66ff, #cc3300);
+}
+
+.login-right-pane {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+
+.arcade-form-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 16px;
+    border: 3px solid #00ffff;
+    box-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px rgba(0, 255, 255, 0.5),
+        inset 0 0 10px #00ffff;
+    animation: pulse-border-cyan 2s infinite alternate;
+    width: 100%;
+    max-width: 500px;
+}
+
+.arcade-title {
+    font-size: 24px;
+    color: #00ffff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.arcade-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.arcade-form input {
+    padding: 15px;
+    font-size: 12px;
+    border: 2px solid #00ffff;
+    background: #000;
+    color: #fff;
+    border-radius: 12px;
+    outline: none;
+    box-shadow: 0 0 8px #00ffff;
+    width: 100%;
+}
+
+.arcade-button {
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(to bottom, #00ffff, #0066ff);
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #00ccff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.arcade-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, #00ccff, #0033cc);
+    color: #fff;
+}
+
+.error-box {
+    margin-top: 15px;
+    background: #ff0044;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 0 0 8px #ff0044;
+}
+
+@keyframes pulse-border-cyan {
+    0% {
+        box-shadow:
+            0 0 5px #00ffff,
+            0 0 10px #00ffff,
+            0 0 20px #00ffff,
+            0 0 40px rgba(0, 255, 255, 0.5),
+            inset 0 0 10px #00ffff;
+    }
+    100% {
+        box-shadow:
+            0 0 10px #00ffff,
+            0 0 20px #00ffff,
+            0 0 30px #00ffff,
+            0 0 60px rgba(0, 255, 255, 0.8),
+            inset 0 0 14px #00ffff;
+    }
+}
+.arcade-remember input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    accent-color: #00ffff; /* warna sesuai tema arcade */
+    cursor: pointer;
+    transform: scale(1); 
+}
+
+.arcade-remember label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.arcade-reset-link {
+    margin-left: auto;
+    font-size: 14px;
+    color: #00cccf;
+    text-decoration: underline;
+    stroke: #fff;
+    stroke-width: 40px;
+    text-shadow: #10f409;
+}

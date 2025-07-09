@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.arcade-dashboard-container {
+    background: url('/image/arcade-bg.gif') center center no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    padding: 40px;
+    font-family: 'Press Start 2P', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arcade-dashboard-title {
+    font-size: 20px;
+    color: #ff00ff;
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+.arcade-panel {
+    background: rgba(0, 0, 0, 0.75);
+    border: 3px solid #00ffff;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        inset 0 0 10px #00ffff;
+    animation: pulse-panel 2s infinite alternate;
+}
+
+@keyframes pulse-panel {
+    0% {
+        box-shadow: 0 0 10px #00ffff, inset 0 0 10px #00ffff;
+    }
+    100% {
+        box-shadow: 0 0 20px #00ffff, inset 0 0 14px #00ffff;
+    }
+}
+
+.arcade-panel-title {
+    font-size: 18px;
+    color: yellow;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+.arcade-panel-text {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.arcade-panel-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.arcade-panel-btn {
+    background: linear-gradient(to bottom, #ff00ff, #ff6600);
+    color: yellow;
+    border: 2px solid #ffcc00;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ff00ff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.arcade-panel-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, #ff66ff, #cc3300);
+    color: white;
+}
